@@ -1,0 +1,68 @@
+<header>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<ul class="hide-on-med-and-down">
+					<li><span class="bold brand-logo center">&nbsp&nbsp&nbsp Calorie King&nbsp&nbsp&nbsp</span></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+<br>
+<br>
+<main>
+	<div class="row">
+		<div class="col s12 m4 l2">
+			<p></p>
+		</div>
+		<div class="col s12 m4 l8">
+			<div class="card z-depth-1">
+				<div class="card-content">
+					<h5 class="black-text text-lighten-1 center-align">Join today</h5>
+				</div>
+				<div class="card-content">
+					<div class="row">
+						<form class="formValidate right-alert" id="formValidate">
+								<div class="row">
+									<div class="input-field col s12">
+											<i class="mdi-action-account-circle prefix"></i>
+											<label for="name">Username</label>
+											<input id="name" name="name" type="text" ng-model="user.name" data-error=".errorTxt1">
+											<div class="errorTxt1"></div>
+									</div>
+									<div class="input-field col s12">
+										  <i class="mdi-communication-email prefix"></i>
+										  <label for="email">E-Mail</label>
+										  <input id="email" type="email" name="email" ng-model="user.email" data-error=".errorTxt2">
+										  <div class="errorTxt2"></div>
+									</div>
+									<div class="input-field col s12">
+										  <i class="mdi-action-lock-outline prefix"></i>
+										  <label for="password">Password</label>
+										  <input id="password" type="password" name="password" ng-model="user.password" data-error=".errorTxt3">
+										  <div class="errorTxt3"></div>
+									</div>
+									<div class="input-field col s12">
+										  <i class="mdi-action-lock-outline prefix"></i>
+										  <label for="cpassword">Confirm Password</label>
+										  <input id="cpassword" type="password" name="cpassword" data-error=".errorTxt4">
+										  <div class="errorTxt4"></div>
+									</div>
+									<div class="input-field col s12 center-align">
+										<div class="input-field col s6 center-align">
+											<a class="waves-effect green btn" href="#/">Back</a>
+										</div>
+										<div class="input-field col s6 center-align">
+											<button class="btn waves-effect green" ng-click="register(user)" name=" action">Sign Up
+											</button>
+										</div>
+									</div>
+								</div>
+						  </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

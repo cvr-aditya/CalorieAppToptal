@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Calorie King</title>
+
+	<!-- Css folder -->
+	<link type="text/css" href="css/style.css" rel="stylesheet" media="screen,projection"/>
+	<link type="text/css" href="css/materialize.min.css" rel="stylesheet" media="screen,projection">
+	<link type="text/css" href="css/angular-material.min.css" rel="stylesheet" media="screen,projection"/>
+	<link type="text/css" href="css/angular-tooltips.min.css" rel="stylesheet" media="screen,projection"/>
+	<link type="text/css" href="css/icon.css" rel="stylesheet" media="screen,projection"/>
+	<link type="text/css" href="css/sticky-footer.css" rel="stylesheet" media="screen,projection"/>
+	<link type="text/css" href="css/sweetalert.css" rel="stylesheet" media="screen,projection"/>
+	
+	<!-- Font folder -->
+	<!-- material-design-icons folder -->
+	<link href="font/material-design-icons/Material-Design-Icons.eot" rel="stylesheet" type="text/css">
+	<link href="font/material-design-icons/Material-Design-Icons.svg" rel="stylesheet" type="text/css">
+	<link href="font/material-design-icons/Material-Design-Icons.ttf" rel="stylesheet" type="text/css">
+	<link href="font/material-design-icons/Material-Design-Icons.woff" rel="stylesheet" type="text/css">
+	<link href="font/material-design-icons/Material-Design-Icons.woff2" rel="stylesheet" type="text/css">
+	<!-- roboto Folder -->
+	<link href="font/roboto/Roboto-Bold.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Bold.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Bold.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Bold.woff2" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Light.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Light.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Light.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Light.woff2" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Medium.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Medium.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Medium.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Medium.woff2" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Regular.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Regular.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Regular.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Regular.woff2" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Thin.eot" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Thin.ttf" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Thin.woff" rel="stylesheet" type="text/css">
+	<link href="font/roboto/Roboto-Thin.woff2" rel="stylesheet" type="text/css">
+
+	<!-- js folder -->
+	<script type="text/javascript" src="js/external/jquery.min.js"></script>
+	<script type="text/javascript" src="js/external/angular.min.js"></script>
+	<script type="text/javascript" src="js/external/angular-materialize.min.js"></script>
+	<script type="text/javascript" src="js/external/materialize.min.js"></script>
+	<script type="text/javascript" src="js/external/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="js/external/angular-animate.min.js"></script>
+	<script type="text/javascript" src="js/external/angular-aria.min.js"></script>
+	<script type="text/javascript" src="js/external/angular-material.min.js"></script>
+	<script type="text/javascript" src="js/external/angular-sanitize.min.js"></script>  
+	<script type="text/javascript" src="js/external/sweetalert.min.js"></script>
+	<script type="text/javascript" src="js/external/jquery-validate.js"></script>
+	<script type="text/javascript" src="js/external/angular-cookies.min.js"></script>
+	<script type="text/javascript" src="js/external/jsgrid.min.js"></script>
+	<script type="text/javascript" src="js/external/plugins.min.js"></script>
+	<script type="text/javascript" src="js/external/angular-messages.min.js"></script>
+	<script type="text/javascript" src="js/external/mdPickers.min.js"></script>
+	<script type="text/javascript" src="js/external/angular-route.js"></script>
+	<script type="text/javascript" src="js/external/moment.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
+	
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/http-util.js"></script>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/favicon_ca7136.png" rel="icon" />
+	<!--[if IE]><link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/favicon_68b340.ico" rel="shortcut icon" /><![endif]-->
+	<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/touch_x57_f72647.png" rel="apple-touch-icon-precomposed" sizes="57x57" />
+	<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/touch_x72_516451.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+	<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/touch_x114_1798a8.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+	<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/touch_x57_f72647.png" rel="apple-touch-icon-precomposed" />
+	<style type="text/css">
+	  .input-field div.error{
+		position: relative;
+		top: -1rem;
+		left: 0rem;
+		font-size: 0.8rem;
+		color:#FF4081;
+		-webkit-transform: translateY(0%);
+		-ms-transform: translateY(0%);
+		-o-transform: translateY(0%);
+		transform: translateY(0%);
+	  }
+		
+  	  .input-field label.active{
+      	 width:100%;
+  	  }
+  
+	  .right-alert input[type=text] + label:after, 
+	  .right-alert input[type=password] + label:after, 
+	  .right-alert input[type=email] + label:after, 
+	  .right-alert input[type=url] + label:after, 
+	  .right-alert input[type=time] + label:after,
+	  .right-alert input[type=date] + label:after, 
+	  .right-alert input[type=datetime-local] + label:after, 
+	  .right-alert input[type=tel] + label:after, 
+	  .right-alert input[type=number] + label:after, 
+	  .right-alert input[type=search] + label:after, 
+	  .right-alert textarea.materialize-textarea + label:after{
+      right:70px;
+  }
+  </style>
+</head>
+<body>
+	<div ng-app="calorieKing">
+		<ng-view></ng-view>
+	</div>
+	<br>
+	<br>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Toptal.com</h5>
+					<p class="grey-text text-lighten-4">Hire the top 3% of freelance talent</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">About</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/top-3-percent">Top 3%</a></li>
+						<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/clients">Clients</a></li>
+						<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/developers">Freelance Developers</a></li>
+						<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/designers">Freelance Designers</a></li>
+						<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/about">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© Copyright 2010 - 2017 Toptal, LLC
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

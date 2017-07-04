@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Sign Up</title>
+		<!-- Css folder -->
+		<link type="text/css" href="css/style.css" rel="stylesheet" media="screen,projection"/>
+		<link type="text/css" href="css/materialize.min.css" rel="stylesheet" media="screen,projection">
+		<link type="text/css" href="css/angular-tooltips.min.css" rel="stylesheet" media="screen,projection"/>
+		<link type="text/css" href="css/icon.css" rel="stylesheet" media="screen,projection"/>
+		<link type="text/css" href="css/sticky-footer.css" rel="stylesheet" media="screen,projection"/>
+		<link type="text/css" href="css/sweetalert.css" rel="stylesheet" media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/jsgrid.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/jsgrid-theme.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/mdPickers.min.css" />
+		<link rel="stylesheet" href="css/angular-material.min.css">
+		<!-- Font folder -->
+		<!-- material-design-icons folder -->
+		<link href="font/material-design-icons/Material-Design-Icons.eot" rel="stylesheet" type="text/css">
+		<link href="font/material-design-icons/Material-Design-Icons.svg" rel="stylesheet" type="text/css">
+		<link href="font/material-design-icons/Material-Design-Icons.ttf" rel="stylesheet" type="text/css">
+		<link href="font/material-design-icons/Material-Design-Icons.woff" rel="stylesheet" type="text/css">
+		<link href="font/material-design-icons/Material-Design-Icons.woff2" rel="stylesheet" type="text/css">
+		<!-- roboto Folder -->
+		<link href="font/roboto/Roboto-Bold.eot" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Bold.ttf" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Bold.woff" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Bold.woff2" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Light.eot" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Light.ttf" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Light.woff" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Light.woff2" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Medium.eot" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Medium.ttf" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Medium.woff" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Medium.woff2" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Regular.eot" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Regular.ttf" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Regular.woff" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Regular.woff2" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Thin.eot" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Thin.ttf" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Thin.woff" rel="stylesheet" type="text/css">
+		<link href="font/roboto/Roboto-Thin.woff2" rel="stylesheet" type="text/css">
+		<!-- js folder -->
+		<script type="text/javascript" src="js/external/jquery.min.js"></script>
+		<script type="text/javascript" src="js/external/angular.min.js"></script>
+		<script type="text/javascript" src="js/external/angular-materialize.min.js"></script>
+		<script type="text/javascript" src="js/external/materialize.min.js"></script>
+		<script type="text/javascript" src="js/external/moment-with-locales.min.js"></script>
+		<script type="text/javascript" src="js/external/angular-animate.min.js"></script>
+		<script type="text/javascript" src="js/external/angular-aria.min.js"></script>
+		<script type="text/javascript" src="js/external/angular-material.min.js"></script>
+		<script type="text/javascript" src="js/external/angular-sanitize.min.js"></script>  
+		<script type="text/javascript" src="js/external/sweetalert.min.js"></script>
+		<script type="text/javascript" src="js/external/jquery-validate.js"></script>
+		<script type="text/javascript" src="js/external/angular-cookies.min.js"></script>
+		<script type="text/javascript" src="js/external/jsgrid.min.js"></script>
+		<script type="text/javascript" src="js/external/plugins.min.js"></script>
+		<script type="text/javascript" src="js/external/angular-messages.min.js"></script>
+		<script type="text/javascript" src="js/external/mdPickers.min.js"></script>
+		<script type="text/javascript" src="js/external/angular-route.js"></script>
+		<script type="text/javascript" src="js/external/moment.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/http-util.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/favicon_ca7136.png" rel="icon" />
+		<!--[if IE]>
+		<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/favicon_68b340.ico" rel="shortcut icon" />
+		<![endif]-->
+		<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/touch_x57_f72647.png" rel="apple-touch-icon-precomposed" sizes="57x57" />
+		<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/touch_x72_516451.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+		<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/touch_x114_1798a8.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+		<link href="https://bs-assets.toptal.io/blackfish-assets/public/base/images/favicons/touch_x57_f72647.png" rel="apple-touch-icon-precomposed" />
+		<style type="text/css">
+			.input-field div.error{
+			position: relative;
+			top: -1rem;
+			left: 0rem;
+			font-size: 0.8rem;
+			color:#FF4081;
+			-webkit-transform: translateY(0%);
+			-ms-transform: translateY(0%);
+			-o-transform: translateY(0%);
+			transform: translateY(0%);
+			}
+			.input-field label.active{
+			width:100%;
+			}
+			.right-alert input[type=text] + label:after, 
+			.right-alert input[type=password] + label:after, 
+			.right-alert input[type=email] + label:after, 
+			.right-alert input[type=url] + label:after, 
+			.right-alert input[type=time] + label:after,
+			.right-alert input[type=date] + label:after, 
+			.right-alert input[type=datetime-local] + label:after, 
+			.right-alert input[type=tel] + label:after, 
+			.right-alert input[type=number] + label:after, 
+			.right-alert input[type=search] + label:after, 
+			.right-alert textarea.materialize-textarea + label:after{
+			right:70px;
+			}
+		</style>
+	</head>
+	<body ng-app="calorieKing" ng-controller="HomeController">
+		<header>
+			<div class="navbar-fixed">
+				<nav>
+					<div class="nav-wrapper">
+						<ul class="left hide-on-med-and-down">
+							<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+							<li id="homeList"><a class="waves-effect white-text active" ng-click="populateMeals()" href="javascript:void(0)"><i class="material-icons active left">home</i>Home</a></li>
+							<li id="usersList"><a id="usersTab" ng-click="populateUsers()" class="waves-effect white-text" href="javascript:void(0)"><i class="material-icons left">account_box</i>Users</a></li>
+							<li id="adminMealsList"><a id="adminMealsTab" ng-click="populateAdminMeals()" class="waves-effect white-text" href="javascript:void(0)"><i class="material-icons left">cake</i>Meals</a></li>
+						</ul>
+						<ul class="hide-on-med-and-down">
+							<li><span class="bold brand-logo center">&nbsp&nbsp&nbsp Calorie King&nbsp&nbsp&nbsp</span></li>
+						</ul>
+						<ul class="right hide-on-med-and-down">
+							<!-- Dropdown Trigger -->
+							<li>
+								<a class="dropdown-button" href="#!" data-hover="true" data-activates="dropdown1">{{ username }}<i class="mdi-navigation-arrow-drop-down right"></i></a>
+								<ul id="dropdown1" class="dropdown-content">
+									<li><a href="#!" ng-click="showProfileModal()"><i class="material-icons left">account_circle</i>Profile</a></li>
+									<li><a href="#!" ng-click="updateCalories()"><i class="material-icons left">settings</i>Settings</a></li>
+									<li><a href="#!" ng-click="logout()"><i class="material-icons left">exit_to_app</i>Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<br>
+		<br>
+		<main>
+			<div>
+				<div class="row">
+					<div class="col s12 m4 l1">
+						<div class="row">
+							<div class="col s12">
+								<div class="card white">
+								</div>
+							</div>
+							<div class="col s12">
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m4 l8">
+						<div id="profileModal">
+							<div class="row">
+								<div class="card z-depth-1">
+									<div class="card-content">
+										<div class="row">
+											<br><br>
+											<form class="col s12 formValidate right-alert" id="profile">
+												<div class="row">
+													<div class="input-field col s12">
+														<i class="mdi-action-account-circle prefix"></i>
+														<input id="profileName" placeholder="Username" name="name" type="text" ng-model="profile.name" data-error=".errorTxtp1">
+														<div class="errorTxtp1"></div>
+													</div>
+													<div class="input-field col s12">
+														<i class="mdi-communication-email prefix"></i>
+														<input id="profileEmail" type="email" placeholder="E-Mail" name="email" ng-model="profile.email" readonly>
+													</div>
+													<div class="input-field col s12">
+														<i class="mdi-action-face-unlock prefix"></i>
+														<input id="profileRole" type="text" placeholder="Role" name="role" ng-model="profile.role" readonly>
+														<div class="errorTxt3"></div>
+													</div>
+													<div class="input-field col s12 center-align">
+														<button class="btn waves-effect green" ng-click="updateProfile(profile)" name=" action">Edit Profile
+														</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="mealsGrid">
+							<div class="row">
+								<div>
+									<div id="mealsTable"></div>
+								</div>
+								<div class="fixed-action-btn" style="bottom: 275px; right: 50px;">
+									<a class="btn-floating btn-large" ng-click="displayAddMeal()" href="#">
+									<i class="mdi-content-add"></i>
+									</a>
+								</div>
+								<div id="addMealModal" class="card z-depth-1">
+									<div class="card-content">
+										<div class="row">
+											<br><br>
+											<form class="col s12 formValidate right-alert" id="addMealForm">
+												<div class="row">
+													<div class="input-field col s12">
+														<label for="itemName">Item Name</label>
+														<input id="itemName" name="name" type="text" ng-model="meal.itemName" data-error=".errorTxtaa1">
+														<div class="errorTxtaa1"></div>
+													</div>
+													<div class="input-field col s12">
+														<label for="calories">Calories</label>
+														<input id="calories" type="number" step="0.01" name="calories" ng-model="meal.calories" data-error=".errorTxtaa2">
+														<div class="errorTxtaa2"></div>
+													</div>
+													<div class="col s12">
+														<div class="row">
+															<div class="input-field col s6">
+																<mdp-date-picker id="mealDate" ng-model="currentDate"></mdp-date-picker>
+																<div class="errorTxtaa3"></div>
+															</div>
+															<div class="input-field col s6">
+																<mdp-time-picker id="mealTime" ng-model="currentDate"></mdp-time-picker>
+																<div class="errorTxtaa4"></div>
+															</div>
+														</div>
+													</div>
+													<div class="input-field col s12 center-align">
+														<div class="input-field col s6 center-align">
+															<button class="btn waves-effect green" ng-click="populateMeals()" name="action">Back
+															</button>
+														</div>
+														<div class="input-field col s6 center-align">
+															<button class="btn waves-effect green" ng-click="mealController.insertItem(meal,currentDate)" name="action">Add Meal
+															</button>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div id="editMealModal" class="card z-depth-1">
+									<div class="card-content">
+										<div class="row">
+											<br><br>
+											<form class="col s12 formValidate right-alert" id="editMealForm">
+												<div class="row">
+													<div id="editItemNameDiv" class="input-field col s12">
+														<input id="editItemName" name="name" type="text" ng-model="editMeal.itemName" data-error=".errorTxte1" placeholder="Item Name">
+														<div class="errorTxte1"></div>
+													</div>
+													<div id="editCaloriesDiv" class="input-field col s12">
+														<input id="editCalories" type="number" step="0.01" name="calories" placeholder="Calories" ng-model="editMeal.calories" data-error=".errorTxte2">
+														<div class="errorTxte2"></div>
+													</div>
+													<div class="col s12">
+														<div class="row">
+															<div class="input-field col s6">
+																<mdp-date-picker id="editMealDate" ng-model="mealTime"></mdp-date-picker>
+																<div class="errorTxte3"></div>
+															</div>
+															<div class="input-field col s6">
+																<mdp-time-picker id="editMealTime" ng-model="mealTime"></mdp-time-picker>
+																<div class="errorTxte4"></div>
+															</div>
+														</div>
+													</div>
+													<div class="input-field col s12 center-align">
+														<div class="input-field col s4 center-align">
+															<button class="btn waves-effect green" ng-click="populateMeals()" name="action">Back
+															</button>
+														</div>
+														<div class="input-field col s4 center-align">
+															<button class="btn waves-effect green" ng-click="mealController.updateItem(editMeal,mealTime)" name="action">Edit Meal
+															</button>
+														</div>
+														<div class="input-field col s4 center-align">
+															<button class="btn waves-effect green" ng-click="mealController.deleteItem(editMeal)" name="action">Delete Meal
+															</button>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row" id="usersGrid">
+							<div>
+								<div id="usersTable"></div>
+							</div>
+							<div class="fixed-action-btn" style="bottom: 275px; right: 50px;">
+								<a class="btn-floating btn-large modal-trigger" href="#addUserModal">
+								<i class="mdi-social-person-add"></i>
+								</a>
+							</div>
+							<div id="addUserModal" class="modal">
+								<div class="navbar-fixed">
+									<nav>
+										<div class="nav-wrapper">
+											<div class="left col s12 m5 l5">
+												<ul>
+													<li><a href="#!" class="email-type">Add User</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col s12 m7 l7 hide-on-med-and-down">
+												<ul class="right">
+													<li><a href="#!"><i class="modal-action modal-close mdi-navigation-close"></i></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</nav>
+								</div>
+								<div class="model-email-content">
+									<div class="row">
+										<br><br>
+										<form class="col s12 formValidate right-alert" id="addUser">
+											<div class="row">
+												<div class="input-field col s12">
+													<i class="mdi-action-account-circle prefix"></i>
+													<label for="name">Username</label>
+													<input id="name" name="name" type="text" ng-model="user.name" data-error=".errorTxt1">
+													<div class="errorTxt1"></div>
+												</div>
+												<div class="input-field col s12">
+													<i class="mdi-communication-email prefix"></i>
+													<label for="email">E-Mail</label>
+													<input id="email" type="email" name="email" ng-model="user.email" data-error=".errorTxt2">
+													<div class="errorTxt2"></div>
+												</div>
+												<div class="input-field col s12">
+													<i class="mdi-action-lock-outline prefix"></i>
+													<label for="password">Password</label>
+													<input id="password" type="password" name="password" ng-model="user.password" data-error=".errorTxt3">
+													<div class="errorTxt3"></div>
+												</div>
+												<div class="input-field col s12">
+													<i class="mdi-action-lock-outline prefix"></i>
+													<label for="cpassword">Confirm Password</label>
+													<input id="cpassword" type="password" name="cpassword" ng-model="user.cpassword" data-error=".errorTxt4">
+													<div class="errorTxt4"></div>
+												</div>
+												<div class="input-field col s12 center-align">
+													<button class="btn waves-effect green" ng-click="userController.insertItem(user)" name=" action">Add User
+													</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="adminMealsGrid">
+							<div class="row">
+								<div>
+									<div id="adminMealsTable"></div>
+								</div>
+								<div class="fixed-action-btn" style="bottom: 275px; right: 50px;">
+									<a class="btn-floating btn-large" ng-click="displayAdminAddMeal()" href="#">
+									<i class="mdi-content-add"></i>
+									</a>
+								</div>
+								<div id="adminAddMealModal" class="card z-depth-1">
+									<div class="card-content">
+										<div class="row">
+											<br><br>
+											<form class="col s12 formValidate right-alert" id="adminAddMealForm">
+												<div class="row">
+													<div class="input-field col s12">
+														<label for="adminEmail">E-Mail</label>
+														<input id="adminEmail" name="name" type="text" ng-model="meal.email" data-error=".errorTxta1">
+														<div class="errorTxta1"></div>
+													</div>
+													<div class="input-field col s12">
+														<label for="adminItemName">Item Name</label>
+														<input id="adminItemName" name="name" type="text" ng-model="meal.itemName" data-error=".errorTxta2">
+														<div class="errorTxta2"></div>
+													</div>
+													<div class="input-field col s12">
+														<label for="adminCalories">Calories</label>
+														<input id="adminCalories" type="number" step="0.01" name="calories" ng-model="meal.calories" data-error=".errorTxta2">
+														<div class="errorTxta3"></div>
+													</div>
+													<div class="col s12">
+														<div class="row">
+															<div class="input-field col s6">
+																<mdp-date-picker id="mealDate" ng-model="currentDate"></mdp-date-picker>
+																<div class="errorTxta4"></div>
+															</div>
+															<div class="input-field col s6">
+																<mdp-time-picker id="mealTime" ng-model="currentDate"></mdp-time-picker>
+																<div class="errorTxta5"></div>
+															</div>
+														</div>
+													</div>
+													<div class="input-field col s12 center-align">
+														<div class="input-field col s6 center-align">
+															<button class="btn waves-effect green" ng-click="populateAdminMeals()" name="action">Back
+															</button>
+														</div>
+														<div class="input-field col s6 center-align">
+															<button class="btn waves-effect green" ng-click="adminMealController.insertItem(meal,currentDate)" name="action">Add Meal
+															</button>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div id="adminEditMealModal" class="card z-depth-1">
+									<div class="card-content">
+										<div class="row">
+											<br><br>
+											<form class="col s12 formValidate right-alert" id="adminEditMealForm">
+												<div class="row">
+													<div class="input-field col s12">
+														<input id="adminEditEmail" name="name" type="text" ng-model="adminEditMeal.email" data-error=".errorTxtee1" placeholder="E-Mail" readonly>
+														<div class="errorTxtee1"></div>
+													</div>
+													<div id="editItemNameDiv" class="input-field col s12">
+														<input id="adminEditItemName" name="name" type="text" ng-model="adminEditMeal.itemName" data-error=".errorTxtee2" placeholder="Item Name">
+														<div class="errorTxtee2"></div>
+													</div>
+													<div id="editCaloriesDiv" class="input-field col s12">
+														<input id="adminEditCalories" type="number" step="0.01" name="calories" placeholder="Calories" ng-model="adminEditMeal.calories" data-error=".errorTxtee3">
+														<div class="errorTxtee3"></div>
+													</div>
+													<div class="col s12">
+														<div class="row">
+															<div class="input-field col s6">
+																<mdp-date-picker id="adminEditMealDate" ng-model="adminMealTime"></mdp-date-picker>
+																<div class="errorTxtee4"></div>
+															</div>
+															<div class="input-field col s6">
+																<mdp-time-picker id="adminEditMealTime" ng-model="adminMealTime"></mdp-time-picker>
+																<div class="errorTxtee5"></div>
+															</div>
+														</div>
+													</div>
+													<div class="input-field col s12 center-align">
+														<div class="input-field col s6 center-align">
+															<button class="btn waves-effect green" ng-click="populateAdminMeals()" name="action">Back
+															</button>
+														</div>
+														<div class="input-field col s6 center-align">
+															<button class="btn waves-effect green" ng-click="adminMealController.updateItem(adminEditMeal,adminMealTime)" name="action">Edit Meal
+															</button>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m4 l3">
+						<div class="row">
+							<div class="right-align">
+								<a class="btn waves-effect waves-light right-align" id="filterBtn" onClick="$('#showFilterCollapsible').toggle()">Filter By</a>
+							</div>
+						</div>
+						<div class="row">
+							<div id="showFilterCollapsible">
+								<ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+									<li>
+										<div class="collapsible-header">Time</div>
+										<div class="collapsible-body">
+											<div class="col s12">
+												<div id="filterTimeTab" class="row">
+													<div class="input-field col s12">
+														From Time:
+														<mdp-time-picker ng-model="filterFromDate"></mdp-time-picker>
+													</div>
+													<div class="input-field col s12">
+														To Time:
+														<mdp-time-picker ng-model="filterToDate"></mdp-time-picker>
+													</div>
+													<div class="input-field col s12">
+														<a id="loginBtn" class="waves-effect green btn" ng-click="filterByTime()" href="javascript:void(0)">Filter</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="collapsible-header">Date</div>
+										<div class="collapsible-body">
+											<div class="col s12">
+												<div id="filterDateTab" class="row">
+													<div class="input-field col s12">
+														From Date:
+														<mdp-date-picker mdp-max-date="filterToDate" ng-model="filterFromDate"></mdp-date-picker>
+													</div>
+													<div class="input-field col s12">
+														To Date:
+														<mdp-date-picker mdp-min-date='filterFromDate' ng-model="filterToDate"></mdp-date-picker>
+													</div>
+													<div class="input-field col s12">
+														<a id="loginBtn" class="waves-effect green btn" ng-click="filterByDate()" href="javascript:void(0)">Filter</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<br>
+		<br>
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Toptal.com</h5>
+						<p class="grey-text text-lighten-4">Hire the top 3% of freelance talent</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">About</h5>
+						<ul>
+							<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/top-3-percent">Top 3%</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/clients">Clients</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/developers">Freelance Developers</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/designers">Freelance Designers</a></li>
+							<li><a class="grey-text text-lighten-3" href="https://www.toptal.com/about">About Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© Copyright 2010 - 2017 Toptal, LLC
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
